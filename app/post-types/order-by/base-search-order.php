@@ -98,8 +98,8 @@ abstract class Base_Search_Order {
 			'type' => \Voxel\Form_Models\Radio_Buttons_Model::class,
 			'label' => 'Order',
 			'choices' => [
-				'ASC' => __( 'Ascending', 'voxel' ),
-				'DESC' => __( 'Descending', 'voxel' ),
+				'ASC' => __( 'Oplopend', 'voxel' ),
+				'DESC' => __( 'Aflopend', 'voxel' ),
 			],
 		];
 	}
