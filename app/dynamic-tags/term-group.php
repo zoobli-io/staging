@@ -53,7 +53,7 @@ class Term_Group extends Base_Group {
 			],
 
 			':description' => [
-				'label' => 'Description',
+				'label' => 'Beschrijving',
 				'type' => \Voxel\T_STRING,
 				'callback' => function() {
 					return $this->term->get_description();
@@ -61,7 +61,7 @@ class Term_Group extends Base_Group {
 			],
 
 			':icon' => [
-				'label' => 'Icon',
+				'label' => 'Icoon',
 				'type' => \Voxel\T_STRING,
 				'callback' => function() {
 					return $this->term->get_icon();
@@ -77,7 +77,7 @@ class Term_Group extends Base_Group {
 			],
 
 			':image' => [
-				'label' => 'Image',
+				'label' => 'Afbeelding',
 				'type' => \Voxel\T_NUMBER,
 				'callback' => function() {
 					return $this->term->get_image_id();
@@ -89,14 +89,14 @@ class Term_Group extends Base_Group {
 				'type' => \Voxel\T_OBJECT,
 				'properties' => [
 					'address' => [
-						'label' => 'Address',
+						'label' => 'Adres',
 						'type' => \Voxel\T_STRING,
 						'callback' => function() {
 							return $this->term->get_area()['address'];
 						},
 					],
 					'southwest' => [
-						'label' => 'Southwest',
+						'label' => 'Zuidwest',
 						'type' => \Voxel\T_OBJECT,
 						'properties' => [
 							'lat' => [
@@ -116,7 +116,7 @@ class Term_Group extends Base_Group {
 						],
 					],
 					'northeast' => [
-						'label' => 'Northeast',
+						'label' => 'Noordoost',
 						'type' => \Voxel\T_OBJECT,
 						'properties' => [
 							'lat' => [
