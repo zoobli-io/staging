@@ -14,7 +14,7 @@ class Nearby_Order extends Base_Search_Order {
 	];
 
 	public function get_label(): string {
-		return __( 'Nearby', 'voxel' );
+		return __( 'Dichtbij', 'voxel' );
 	}
 
 	public function get_models(): array {
