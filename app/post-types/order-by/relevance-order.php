@@ -14,7 +14,7 @@ class Relevance_Order extends Base_Search_Order {
 	];
 
 	public function get_label(): string {
-		return __( 'Relevance', 'voxel' );
+		return __( 'Relevantie', 'voxel' );
 	}
 
 	public function get_models(): array {
