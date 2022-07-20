@@ -14,7 +14,7 @@ class Date_Modified_Order extends Base_Search_Order {
 	];
 
 	public function get_label(): string {
-		return __( 'Date modified', 'voxel' );
+		return __( 'Datum bijgewerkt', 'voxel' );
 	}
 
 	public function get_models(): array {
