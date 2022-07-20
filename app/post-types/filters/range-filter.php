@@ -11,7 +11,7 @@ class Range_Filter extends Base_Filter {
 
 	protected $props = [
 		'type' => 'range',
-		'label' => 'Range',
+		'label' => 'Bereik',
 		'handles' => 'single',
 		'compare' => 'in_range',
 		'source' => '',
@@ -38,13 +38,13 @@ class Range_Filter extends Base_Filter {
 			],
 			'range_start' => [
 				'type' => \Voxel\Form_Models\Number_Model::class,
-				'label' => 'Range start',
+				'label' => 'Bereik start',
 				'width' => '1/3',
 				'step' => 'any',
 			],
 			'range_end' => [
 				'type' => \Voxel\Form_Models\Number_Model::class,
-				'label' => 'Range end',
+				'label' => 'Bereik einde',
 				'width' => '1/3',
 				'step' => 'any',
 			],
@@ -57,11 +57,11 @@ class Range_Filter extends Base_Filter {
 			],
 			'compare' => [
 				'type' => \Voxel\Form_Models\Select_Model::class,
-				'label' => 'Comparison',
+				'label' => 'Vergelijking',
 				'width' => '1/1',
 				'choices' => [
-					'in_range' => 'Inside selected range',
-					'outside_range' => 'Outside selected range',
+					'in_range' => 'Binnen geselecteerde bereik',
+					'outside_range' => 'Buiten geselecteerde bereik',
 				],
 			],
 		];
@@ -184,7 +184,7 @@ class Range_Filter extends Base_Filter {
 		if ( $this->props['handles'] === 'single' ) {
 			return [
 				'value' => [
-					'label' => _x( 'Default value', 'range filter', 'voxel' ),
+					'label' => _x( 'Standaard waarde', 'range filter', 'voxel' ),
 					'type' => \Elementor\Controls_Manager::NUMBER,
 				],
 			];
@@ -192,13 +192,13 @@ class Range_Filter extends Base_Filter {
 
 		return [
 			'start' => [
-				'label' => _x( 'Default start value', 'range filter', 'voxel' ),
+				'label' => _x( 'Standaard start waarde', 'range filter', 'voxel' ),
 				'type' => \Elementor\Controls_Manager::NUMBER,
 				'label_block' => true,
 				'classes' => 'ts-half-width',
 			],
 			'end' => [
-				'label' => _x( 'Default end value', 'range filter', 'voxel' ),
+				'label' => _x( 'Standaard eind waarde', 'range filter', 'voxel' ),
 				'type' => \Elementor\Controls_Manager::NUMBER,
 				'label_block' => true,
 				'classes' => 'ts-half-width',
