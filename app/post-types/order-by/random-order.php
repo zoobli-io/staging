@@ -14,7 +14,7 @@ class Random_Order extends Base_Search_Order {
 	];
 
 	public function get_label(): string {
-		return __( 'Random', 'voxel' );
+		return __( 'Willekeurig', 'voxel' );
 	}
 
 	public function get_models(): array {
