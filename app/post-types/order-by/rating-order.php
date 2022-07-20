@@ -14,7 +14,7 @@ class Rating_Order extends Base_Search_Order {
 	];
 
 	public function get_label(): string {
-		return __( 'Rating', 'voxel' );
+		return __( 'Beoordeling', 'voxel' );
 	}
 
 	public function get_models(): array {
