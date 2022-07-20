@@ -15,7 +15,7 @@ class Text_Field_Order extends Base_Search_Order {
 	];
 
 	public function get_label(): string {
-		return __( 'Text field', 'voxel' );
+		return __( 'Tekst veld', 'voxel' );
 	}
 
 	public function get_models(): array {
