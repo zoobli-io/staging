@@ -145,7 +145,7 @@ class User_Group extends Base_Group {
 			'post_types' => $post_types,
 
 			':followers' => [
-				'label' => 'Followers',
+				'label' => 'Volgers',
 				'type' => \Voxel\T_OBJECT,
 				'properties' => [
 					'accepted' => [
