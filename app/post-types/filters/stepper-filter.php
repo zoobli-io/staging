@@ -12,7 +12,7 @@ class Stepper_Filter extends Base_Filter {
 	protected $props = [
 		'type' => 'stepper',
 		'label' => 'Stepper',
-		'placeholder' => '',
+		'placeholder' => 'Stap 1',
 		'source' => '',
 		'step_size' => 1,
 		'range_start' => 0,
