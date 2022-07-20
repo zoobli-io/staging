@@ -11,7 +11,7 @@ class Recurring_Date_Filter extends Base_Filter {
 
 	protected $props = [
 		'type' => 'recurring-date',
-		'label' => 'Recurring Date',
+		'label' => 'Terugkerende datum',
 		'source' => 'recurring-date',
 		'input_mode' => 'date-range',
 		'match_ongoing' => true,
@@ -35,8 +35,8 @@ class Recurring_Date_Filter extends Base_Filter {
 			],
 			'match_ongoing' => [
 				'type' => \Voxel\Form_Models\Switcher_Model::class,
-				'label' => 'Match ongoing dates',
-				'description' => 'Set whether to match dates that have already begun but haven\'t ended yet.',
+				'label' => 'Afstemmen met de bestaande datums',
+				'description' => 'Stel in of datums die al zijn begonnen maar nog niet zijn geëindigd, met elkaar moeten matchen.',
 			]
 		];
 	}
