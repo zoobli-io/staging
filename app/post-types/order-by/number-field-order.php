@@ -15,7 +15,7 @@ class Number_Field_Order extends Base_Search_Order {
 	];
 
 	public function get_label(): string {
-		return __( 'Number field', 'voxel' );
+		return __( 'Nummer veld', 'voxel' );
 	}
 
 	public function get_models(): array {
