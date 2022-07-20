@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/*!
+ * Pikaday
+ * Copyright © 2014 David Bushell | BSD & MIT license | https://dbushell.com/
+ */
+
+.pika-single {
+    display: block;
+    position: relative;
+    color: var(--ts-shade-1);
+}
+
+/*
+clear child float (pika-lendar), using the famous micro clearfix hack
+http://nicolasgallagher.com/micro-clearfix-hack/
+*/
+
+
+.pika-single:after { clear: both }
+
+.pika-single.is-hidden {
+    display: none;
+}
+
+.pika-single.is-bound {
+    position: absolute;
+}
+
+
+
+.pika-title {
+    position: relative;
+    display: flex;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pika-label {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 5px 3px;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.pika-prev {
+    left: 0;
+}
+
+.pika-next {
+    right: 0;
+}
+
+.pika-prev,
+.pika-next {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    border: 0;
+    padding: 0;
+    /* hide text using text-indent trick, using width value (it's enough) */
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+
+.pika-prev i, .pika-next i {
+	pointer-events: none;
+}
+
+
+
+.pika-select {
+    display: none;
+}
+
+
+
+
+
+
+.pika-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+
+.pika-table th,
+.pika-table td {
+    width: 14.285714285714286%;
+    padding: 0;
+}
+
+.pika-table th {
+    color: var(--ts-shade-3);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+
+
+}
+
+.pika-table abbr[title] {
+    text-decoration: none;
+}
+
+.pika-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    transition: .15s ease;
+    font-size: 14px;
+    text-align: center;
+    color: var(--ts-shade-2);
+    background: transparent;
+    width: 38px;
+    height: 38px;
+    justify-content: center;
+    border-radius: 50px;
+    margin: auto;
+}
+
+.pika-week {
+    font-size: 11px;
+    color: #999;
+}
+
+/*.is-today .pika-button {
+    background: #f9fafb;
+}*/
+
+
+.has-event .pika-button {
+    background: #005da9;
+}
+
+
+
+
+.is-disabled .pika-button {
+    pointer-events: none;
+    cursor: default;
+    color: var(--ts-shade-4);
+    opacity: .8;
+    /*text-decoration: line-through;*/
+}
+
+.is-unavailable .pika-button {
+    pointer-events: none;
+    cursor: default;
+}
+
+.is-outside-current-month .pika-button {
+    color: #999;
+    opacity: .3;
+}
+
+.is-selection-disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.pika-button:hover,
+.pika-row.pick-whole-week:hover .pika-button {
+    background: #f3f5f9;
+    box-shadow: none;
+    color: #525a6e;
+    border-radius: 40px;
+}
+
+/* styling for abbr */
+.pika-table abbr {
+    border-bottom: none;
+    cursor: help;
+}
