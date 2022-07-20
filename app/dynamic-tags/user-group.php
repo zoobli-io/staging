@@ -28,7 +28,7 @@ class User_Group extends Base_Group {
 
 	protected function properties(): array {
 		$post_types = [
-			'label' => 'Post types',
+			'label' => 'Berichtypes',
 			'type' => \Voxel\T_OBJECT,
 			'properties' => [],
 		];
@@ -55,7 +55,7 @@ class User_Group extends Base_Group {
 						},
 					],
 					'archive' => [
-						'label' => 'Archive link',
+						'label' => 'Link archief',
 						'type' => \Voxel\T_URL,
 						'callback' => function() use ($post_type) {
 							$filters = $post_type->get_filters();
