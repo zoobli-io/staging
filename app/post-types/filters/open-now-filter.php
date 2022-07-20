@@ -10,7 +10,7 @@ class Open_Now_Filter extends Base_Filter {
 
 	protected $props = [
 		'type' => 'open-now',
-		'label' => 'Open Now',
+		'label' => 'Nu open',
 		'source' => 'work-hours',
 		'convert_tz' => 'post',
 	];
@@ -24,7 +24,7 @@ class Open_Now_Filter extends Base_Filter {
 			'source' => $this->get_source_model( 'work-hours' ),
 			'convert_tz' => [
 				'type' => \Voxel\Form_Models\Select_Model::class,
-				'label' => 'Match based on:',
+				'label' => 'Match gebasseerd op:',
 				'choices' => [
 					'post' => 'Local time: The current time of each post based on the individual post timezone',
 					'site' => 'Site time: The current time based on the site timezone',
