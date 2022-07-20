@@ -14,7 +14,7 @@ class Priority_Order extends Base_Search_Order {
 	];
 
 	public function get_label(): string {
-		return __( 'Priority', 'voxel' );
+		return __( 'Prioriteit', 'voxel' );
 	}
 
 	public function get_models(): array {
