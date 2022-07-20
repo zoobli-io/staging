@@ -14,7 +14,7 @@ class Date_Created_Order extends Base_Search_Order {
 	];
 
 	public function get_label(): string {
-		return __( 'Date created', 'voxel' );
+		return __( 'Datum gemaakt', 'voxel' );
 	}
 
 	public function get_models(): array {
