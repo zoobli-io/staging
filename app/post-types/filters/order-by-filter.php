@@ -10,7 +10,7 @@ class Order_By_Filter extends Base_Filter {
 
 	protected $props = [
 		'type' => 'order-by',
-		'label' => 'Order By',
+		'label' => 'Sorteer op',
 		'key' => 'sort', // 'order' clashes with WP permalinks
 		'singular' => true,
 	];
@@ -124,12 +124,12 @@ class Order_By_Filter extends Base_Filter {
 
 		return [
 			'value' => [
-				'label' => _x( 'Default value', 'orderby filter', 'voxel' ),
+				'label' => _x( 'Standaard waarde', 'orderby filter', 'voxel' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => $choices,
 			],
 			'display_as' => [
-				'label' => _x( 'Display as', 'orderby filter', 'voxel' ),
+				'label' => _x( 'Weergeven als', 'orderby filter', 'voxel' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
 					'popup' => _x( 'Popup', 'orderby filter', 'voxel' ),
@@ -138,8 +138,8 @@ class Order_By_Filter extends Base_Filter {
 				'conditional' => false,
 			],
 			'choices' => [
-				'label' => _x( 'Ordering options', 'orderby filter', 'voxel' ),
-				'description' => _x( 'Leave blank to list all options available', 'orderby filter', 'voxel' ),
+				'label' => _x( 'Sorteer opties', 'orderby filter', 'voxel' ),
+				'description' => _x( 'Laat leeg om alle beschikbare opties weer te geven', 'orderby filter', 'voxel' ),
 				'type' => \Elementor\Controls_Manager::SELECT2,
 				'multiple' => true,
 				'options' => $choices,
