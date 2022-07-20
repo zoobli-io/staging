@@ -10,7 +10,7 @@ class Location_Filter extends Base_Filter {
 
 	protected $props = [
 		'type' => 'location',
-		'label' => 'Location',
+		'label' => 'Locatie',
 		'source' => 'location',
 	];
 
@@ -172,43 +172,43 @@ class Location_Filter extends Base_Filter {
 				HTML,
 			],
 			'southwest' => [
-				'label' => _x( 'Southwest ', 'date filter', 'voxel' ),
+				'label' => _x( 'Zuidwest ', 'date filter', 'voxel' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 			],
 			'swlat' => [
-				'label' => _x( 'Latitude', 'date filter', 'voxel' ),
+				'label' => _x( 'Breedtegraad', 'date filter', 'voxel' ),
 				'type' => \Elementor\Controls_Manager::NUMBER,
 				'min' => -90,
 				'max' => 90,
 				'classes' => 'ts-half-width',
 			],
 			'swlng' => [
-				'label' => _x( 'Longitude', 'date filter', 'voxel' ),
+				'label' => _x( 'Lengtegraad', 'date filter', 'voxel' ),
 				'type' => \Elementor\Controls_Manager::NUMBER,
 				'min' => -180,
 				'max' => 180,
 				'classes' => 'ts-half-width',
 			],
 			'northeast' => [
-				'label' => _x( 'Northeast', 'date filter', 'voxel' ),
+				'label' => _x( 'Noordoost', 'date filter', 'voxel' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 			],
 			'nelat' => [
-				'label' => _x( 'Latitude', 'date filter', 'voxel' ),
+				'label' => _x( 'Breedtegraad', 'date filter', 'voxel' ),
 				'type' => \Elementor\Controls_Manager::NUMBER,
 				'min' => -90,
 				'max' => 90,
 				'classes' => 'ts-half-width',
 			],
 			'nelng' => [
-				'label' => _x( 'Longitude', 'date filter', 'voxel' ),
+				'label' => _x( 'Lengtegraad', 'date filter', 'voxel' ),
 				'type' => \Elementor\Controls_Manager::NUMBER,
 				'min' => -180,
 				'max' => 180,
 				'classes' => 'ts-half-width',
 			],
 			'address' => [
-				'label' => _x( 'Default address', 'date filter', 'voxel' ),
+				'label' => _x( 'Standaard adres', 'date filter', 'voxel' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 			],
 		];
